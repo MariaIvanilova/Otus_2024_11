@@ -4,10 +4,12 @@ from abc import ABC, abstractmethod
 class Figure(ABC):
     """Base class for geometric figure"""
 
+    @property
     @abstractmethod
     def perimeter(self):
         pass
 
+    @property
     @abstractmethod
     def area(self):
         pass

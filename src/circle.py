@@ -12,6 +12,7 @@ class Circle(Figure):
             raise ValueError("Radius can't be less than 0")
         self.r = r
 
+    @property
     def perimeter(self) -> int | float:
         return 2 * math.pi * self.r
 
